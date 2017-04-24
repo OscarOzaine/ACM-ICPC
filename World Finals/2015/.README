@@ -1,0 +1,95 @@
+## Study this
+
+Problem A: Amalgamated Artichokes (solved in 15 minutes, 1 submission)
+    * Solved quickly
+    * Solved by everyone; Coded by Calvin in 5(?) minutes
+    * Algorithm: Simple loop, maintain the maximum price encountered so far.
+    * Notes:
+        * Was too slow in realizing it was easy
+
+Problem B: Asteroids (not solved, no submissions)
+    * Notes:
+        * Guessed that it was ternary search with intersection area,
+        * Again, unsure if this is correct
+        * NOTE FOR NEXT YEAR: need triangle intersection / polygon intersection code. (more geometry in general)
+
+Problem C: Catering (solved in 131 minutes, 2 submissions)
+    * Solved fairly quickly.
+    * Solved by Johnny / Calvin; Coded by Johnny in 30 mins
+    * Algorithm: Min-cost max flow
+    * Notes:
+        * Could’ve been solved more quickly
+        * Wasted time not being sure if it was correct
+        * Wasted time/submission fixing min > max, this should’ve been clear
+
+Problem D: Cutting Cheese (solved in 39 minutes, 1 submission)
+    * Solved fairly quickly
+    * Solved by Calvin; Coded by Calvin in 20 mins
+    * Algorithm: Binary search with volume computations
+
+Problem E: Evolution in Parallel (solved in 290 minutes, 1 submission)
+    * Solved very slowly
+    * Solved by Calvin; Coded by Johnny w/ Calvin pair coding in 20 mins
+    * Algorithm: Greedy Algorithm, with a twist. Maintain three lists: left list, right list, middle list. Sort by length in decreasing order, and add to the middle list when you can; otherwise, add to whichever list fits and move the middle list into the other list (then clear the middle list).
+    * Notes:
+        * Didn’t get greedy solution until half an hour or left
+        * Didn’t realize we could greedy 
+
+Problem F: Keyboarding (solved in 84 minutes, 1 submission)
+    * Solved fairly quickly
+    * Solved by Calvin; Coded by Johnny in 30 mins
+    * Algorithm: Simple BFS; the state is (x, y, number of letters typed).
+    * Notes:
+        * Wasted time debating solution and not coding completely to specification
+        * Didn’t realize could move multiple steps at a time, should’ve been clear if we read the problem more carefully
+
+Problem G: Pipe Stream (not solved, no submissions)
+    * No clue, realized that it was hard early
+
+Problem H: Qanat (solved in 210 minutes, 1 submission)
+    * Solved by Calvin and David; Coded by Calvin in 15 minutes
+    * Solved somewhat slowly
+    * Algorithm: finding formula for each shaft location based on its neighboring shaft locations. More precisely: let a0=0,a1,...,an,an+1=wa0=0,a1,...,an,an+1=w be the locations of the shafts. Then ai=(ai−1+ai+1)∗cai=(ai−1+ai+1)∗c, where I think c=1−h2/w2c=1−h2/w2? Afterwards, we can first assume a1=1a1=1 and calculate an+1an+1, and then scale linearly to fit.
+    * Notes:
+        * Took a while to solve, was easy to code though
+
+Problem I: Ship Traffic (solved in 99 minutes, 2 submissions)
+    * Solved by Johnny fairly quickly
+    * Coded by Johnny in 20 mins
+    * Algorithm: Simple interval sorting and merging.
+    * Waited to solve for no reason because nobody else solved it
+        * First solve by MIT at 53 minutes, Johnny solved it considerably before then.
+    * Slightly tripped up by tricky math
+    * First submission’s bug was stupid, involved flipping a pair and pair
+
+Problem J: Tile Cutting (not solved, no submissions)
+    * Solved by Johnny / David fairly quickly.
+    * Algorithm: Basic FFT + Max range queries. Some easy math gives that the number of ways to get an area of nn is the sum of τ(i)τ(n−i)τ(i)τ(n−i) from i=1,...,n−1i=1,...,n−1, where τ(n)τ(n) is the number of divisors of nn.
+    * Notes:
+        * Unfortunately, we did not have FFT code, so we wasted time trying to derive FFT (this was not fruitful).
+        * NOTE FOR NEXT YEAR: Need to add FFT (probably won't appear again, but this is for the sake of completeness).
+
+Problem K: Tours (not solved, no submissions)
+    * Notes:
+        * Didn’t make substantial progress in solving
+        * Turned out to not be that hard, required splicing on bridges and then isolating nodes that disconnect other nodes
+
+Problem L: Weather Report (solved in 148 minutes, 1 submission)
+    * Solved by Calvin; Coded by Johnny w/ Calvin pair coding.
+    * We wasted time testing the problem at the beginning, did not realize discreteness mattered a lot
+    * Turned out to be Huffman encoding w/ repetitions, solved moderately 
+    * quickly
+    * Was unsure of time complexity, so we waited after solving it.
+        * I think it can be shown pretty easily that the program should run in 
+          time (something about bounding the sum of log(probabilities) + 
+          log(frequencies)).
+
+Problem M: Window Manager (not solved in 4 submissions)
+    * Solved pretty quickly
+    * Notes:
+        * Moderately complicated implementation problem
+        * Johnny wasted large amount of coding time (60+ mins)
+            * Started Coding M after submitting L, took short breaks to allow E and H to be coded.
+        * Did not realize reflection/rotation tricks to minimize coding until late
+        * Did not think carefully about solution before coding
+
